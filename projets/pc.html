@@ -1,0 +1,195 @@
+<html><head><base href="https://websim.universe/projects/portail-captif">
+<meta charset="utf-8">
+<title>Ronaldo DOSSOU - Portail Captif WiFi</title>
+<style>
+:root {
+    --dark: #2D2E32;
+    --light: #E0E0E0;
+    --accent: #4A90E2;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 15px;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    padding: 40px;
+    border-right: 1px solid var(--light);
+}
+
+.content {
+    flex-grow: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    font-weight: normal;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: var(--light);
+    margin-top: 5px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.menu li {
+    margin-bottom: 5px;
+}
+
+.menu a {
+    color: var(--light);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.project-details {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-title {
+    font-size: 28px;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.project-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.project-tech {
+    font-size: 14px;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.project-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.project-features {
+    margin-bottom: 30px;
+}
+
+.project-features h3 {
+    font-size: 20px;
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+.project-features ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.project-features li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.project-features li::before {
+    content: "•";
+    color: var(--accent);
+    position: absolute;
+    left: 0;
+}
+
+.back-link {
+    display: inline-block;
+    color: var(--light);
+    text-decoration: none;
+    font-size: 14px;
+    border: 1px solid var(--accent);
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 20px;
+}
+
+.back-link:hover {
+    background-color: var(--accent);
+    color: var(--dark);
+}
+
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 8px;
+    color: var(--light);
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <h1>Ronaldo DOSSOU</h1>
+        <p class="subtitle">Designer &amp; Developer</p>
+        <ul class="menu">
+            <li><a href="https://websim.universe/projects">Projects</a></li>
+            <li><a href="https://websim.universe/info">Info</a></li>
+            <li><a href="https://websim.universe/contact">Contact</a></li>
+            <li><a href="https://websim.universe/faq">FAQ</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="project-details">
+            <h2 class="project-title">Portail Captif WiFi</h2>
+            <p class="project-tech">Technologies: HTML, CSS, API, PHP</p>
+            <img src="https://websim.universe/images/portail-captif.jpg" alt="Interface du Portail Captif WiFi" class="project-image">
+            <div class="project-description">
+                <p>Le Portail Captif WiFi est une solution innovante conçue pour gérer efficacement l'accès au réseau WiFi public. Ce projet a été développé pour répondre aux besoins croissants de sécurité et de contrôle dans les espaces publics offrant une connexion Internet sans fil.</p>
+            </div>
+            <div class="project-features">
+                <h3>Caractéristiques principales :</h3>
+                <ul>
+                    <li>Interface utilisateur intuitive et responsive</li>
+                    <li>Authentification sécurisée des utilisateurs</li>
+                    <li>Gestion des politiques d'utilisation et conditions d'accès</li>
+                    <li>Intégration avec des API externes pour la validation des utilisateurs</li>
+                    <li>Tableau de bord administrateur pour la gestion et le suivi des connexions</li>
+                    <li>Personnalisation de l'apparence du portail selon l'identité visuelle du client</li>
+                </ul>
+            </div>
+            <div class="project-description">
+                <p>Ce projet a nécessité une approche technique approfondie, combinant des compétences en développement front-end (HTML, CSS) pour créer une interface utilisateur attrayante et facile à utiliser, ainsi qu'en back-end (PHP) pour gérer la logique d'authentification et l'intégration avec les systèmes existants.</p>
+                <p>L'utilisation d'API a permis d'étendre les fonctionnalités du portail, offrant des options telles que l'authentification via les réseaux sociaux ou la validation par SMS, améliorant ainsi l'expérience utilisateur tout en maintenant un haut niveau de sécurité.</p>
+            </div>
+            <a href="https://websim.universe/projects" class="back-link">Retour aux projets</a>
+        </div>
+    </div>
+</div>
+
+<div class="copyright">© 2023 Ronaldo DOSSOU. All rights reserved.</div>
+
+</body></html>

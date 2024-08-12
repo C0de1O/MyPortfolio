@@ -1,0 +1,238 @@
+<html><head><base href="https://websim.universe/projects/medzio">
+<meta charset="utf-8">
+<title>Ronaldo DOSSOU - Projet Medzio</title>
+<style>
+:root {
+    --dark: #2D2E32;
+    --light: #E0E0E0;
+    --accent: #4A90E2;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 15px;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    padding: 40px;
+    border-right: 1px solid var(--light);
+}
+
+.content {
+    flex-grow: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    font-weight: normal;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: var(--light);
+    margin-top: 5px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.menu li {
+    margin-bottom: 5px;
+}
+
+.menu a {
+    color: var(--light);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.project-title {
+    font-size: 28px;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.project-info {
+    margin-bottom: 30px;
+}
+
+.project-description {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-tech {
+    font-size: 14px;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.project-features {
+    margin-bottom: 30px;
+}
+
+.project-features h3 {
+    font-size: 18px;
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+.project-features ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.project-features li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.project-features li::before {
+    content: "•";
+    color: var(--accent);
+    position: absolute;
+    left: 0;
+}
+
+.project-challenges {
+    margin-bottom: 30px;
+}
+
+.project-challenges h3 {
+    font-size: 18px;
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+.project-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.back-link {
+    display: inline-block;
+    color: var(--light);
+    text-decoration: none;
+    font-size: 14px;
+    border: 1px solid var(--accent);
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 20px;
+}
+
+.back-link:hover {
+    background-color: var(--accent);
+    color: var(--dark);
+}
+
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 8px;
+    color: var(--light);
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <h1>Ronaldo DOSSOU</h1>
+        <p class="subtitle">Designer &amp; Developer</p>
+        <ul class="menu">
+            <li><a href="https://websim.universe/projects">Projects</a></li>
+            <li><a href="https://websim.universe/info">Info</a></li>
+            <li><a href="https://websim.universe/contact">Contact</a></li>
+            <li><a href="https://websim.universe/faq">FAQ</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h2 class="project-title">Plateforme Medzio</h2>
+        <div class="project-info">
+            <p class="project-description">Développement d'une plateforme web innovante de prise de rendez-vous en temps réel entre praticiens et patients, intégrant une gestion complète des consultations et des dossiers médicaux numériques.</p>
+            <p class="project-tech">Technologies utilisées : PHP, HTML, CSS, JavaScript, MySQL, Bootstrap</p>
+        </div>
+        <img src="https://websim.universe/images/medzio-preview.jpg" alt="Aperçu de l'interface de la plateforme Medzio" class="project-image">
+        <div class="project-features">
+            <h3>Fonctionnalités principales</h3>
+            <ul>
+                <li>Système de prise de rendez-vous en temps réel</li>
+                <li>Gestion des consultations pour les praticiens</li>
+                <li>Dossiers médicaux numériques sécurisés</li>
+                <li>Interface intuitive pour les patients et les praticiens</li>
+                <li>Système de notification par email et SMS</li>
+                <li>Tableau de bord personnalisé pour chaque utilisateur</li>
+                <li>Module de téléconsulatation intégré</li>
+            </ul>
+        </div>
+        <div class="project-challenges">
+            <h3>Défis relevés</h3>
+            <ul>
+                <li>Mise en place d'un système de réservation en temps réel performant</li>
+                <li>Sécurisation des données médicales sensibles</li>
+                <li>Création d'une interface utilisateur intuitive et responsive</li>
+                <li>Optimisation des performances pour gérer un grand nombre d'utilisateurs simultanés</li>
+                <li>Intégration de multiples APIs pour les fonctionnalités avancées</li>
+            </ul>
+        </div>
+        <a href="https://websim.universe/projects" class="back-link">Retour aux projets</a>
+    </div>
+</div>
+
+<div class="copyright">© 2023 Ronaldo DOSSOU. All rights reserved.</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    // Animation subtile pour l'apparition du contenu
+    const content = document.querySelector('.content');
+    content.style.opacity = 0;
+    let opacity = 0;
+    const fadeIn = setInterval(() => {
+        if (opacity >= 1) {
+            clearInterval(fadeIn);
+        }
+        content.style.opacity = opacity;
+        opacity += 0.1;
+    }, 50);
+
+    // Effet de survol sur les éléments de la liste
+    const listItems = document.querySelectorAll('.project-features li, .project-challenges li');
+    listItems.forEach(item => {
+        item.addEventListener('mouseover', () => {
+            item.style.color = 'var(--accent)';
+            item.style.transform = 'translateX(5px)';
+            item.style.transition = 'color 0.3s, transform 0.3s';
+        });
+        item.addEventListener('mouseout', () => {
+            item.style.color = 'var(--light)';
+            item.style.transform = 'translateX(0)';
+        });
+    });
+});
+</script>
+
+</body></html>

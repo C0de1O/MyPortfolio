@@ -1,0 +1,203 @@
+<html><head><base href="">
+<meta charset="utf-8">
+<title>Ronaldo DOSSOU - Projects</title>
+<style>
+:root {
+    --dark: #2D2E32;
+    --light: #E0E0E0;
+    --accent: #4A90E2;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 15px;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    padding: 40px;
+    border-right: 1px solid var(--light);
+}
+
+.content {
+    flex-grow: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    font-weight: normal;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: var(--light);
+    margin-top: 5px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.menu li {
+    margin-bottom: 5px;
+}
+
+.menu a {
+    color: var(--light);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--accent);
+}
+
+.project-description {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.project-tech {
+    font-size: 12px;
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+.project-link {
+    display: inline-block;
+    color: var(--light);
+    text-decoration: none;
+    font-size: 12px;
+    border: 1px solid var(--accent);
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: var(--accent);
+    color: var(--dark);
+}
+
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 8px;
+    color: var(--light);
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <h1>Ronaldo DOSSOU</h1>
+        <p class="subtitle">Designer &amp; Developer</p>
+        <ul class="menu">
+            <li><a href="projets.html">Projects</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3 class="project-title">Portail Captif WiFi</h3>
+                <p class="project-description">Conception et mise en place d'un portail captif pour gérer l'accès au réseau WiFi public.</p>
+                <p class="project-tech">HTML, CSS, API, PHP</p>
+                <a href="projets/pc.html" class="project-link">En savoir plus</a>
+            </div>
+            <div class="project-card">
+                <h3 class="project-title">E-commerce Platform</h3>
+                <p class="project-description">Conception et mise en place d'une plateforme E-commerce complète et fonctionnelle.</p>
+                <p class="project-tech">PHP, HTML, CSS, JS, SQL</p>
+                <a href="projets/ec.html" class="project-link">En savoir plus</a>
+            </div>
+            <div class="project-card">
+                <h3 class="project-title">AD SOLUTIONS Website</h3>
+                <p class="project-description">Création d'un site web pour la présentation d'une entreprise de télécommunication avec commande en ligne.</p>
+                <p class="project-tech">WordPress, Elementor</p>
+                <a href="projets/ad.html" class="project-link">En savoir plus</a>
+            </div>
+            <div class="project-card">
+                <h3 class="project-title">Application de Prospection</h3>
+                <p class="project-description">Développement d'une application VB.NET pour le suivi de prospection avec une base de données intégrée.</p>
+                <p class="project-tech">VB.NET</p>
+                <a href="projets/pr.html" class="project-link">En savoir plus</a>
+            </div>
+            <div class="project-card">
+                <h3 class="project-title">Logiciel de Gestion des Ventes - Event's</h3>
+                <p class="project-description">Application desktop pour la gestion des stocks et des ventes, avec génération automatique de reçus.</p>
+                <p class="project-tech">C#, VB</p>
+                <a href="projets/ev.html" class="project-link">En savoir plus</a>
+            </div>
+            <div class="project-card">
+                <h3 class="project-title">Plateforme Medzio</h3>
+                <p class="project-description">Développement d'une plateforme web de prise de rendez-vous en temps réel entre praticiens et patients, avec consultation et dossiers médicaux numériques.</p>
+                <p class="project-tech">PHP, HTML, CSS, JS, MySQL, Bootstrap</p>
+                <a href="projets/mez.html" class="project-link">En savoir plus</a>
+            </div>
+            <div class="project-card">
+                <h3 class="project-title">Numérisation des Dossiers Médicaux</h3>
+                <p class="project-description">Application permettant la numérisation des dossiers médicaux en ligne et le suivi des dossiers par tout médecin, avec intégration de l'API Google.</p>
+                <p class="project-tech">PHP, HTML, CSS, JS, SQL, Vue.js</p>
+                <a href="projets/dn.html" class="project-link">En savoir plus</a>
+            </div>
+            <div class="project-card">
+                <h3 class="project-title">Plateforme Génie</h3>
+                <p class="project-description">Plateforme de suivi des scores en temps réel pour un jeu biblique, depuis la phase de poules jusqu'à la finale.</p>
+                <p class="project-tech">MVC, PHP, SQL, JS</p>
+                <a href="projets/ge.html" class="project-link">En savoir plus</a>
+            </div>
+            <div class="project-card">
+                <h3 class="project-title">Portfolio Freelance</h3>
+                <p class="project-description">Création d'un portfolio en ligne pour un freelance, mettant en valeur ses compétences et réalisations.</p>
+                <p class="project-tech">HTML, CSS, JS</p>
+                <a href="projets/fr.html" class="project-link">En savoir plus</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="copyright">© 2024 Ronaldo DOSSOU. All rights reserved.</div>
+
+</body></html>

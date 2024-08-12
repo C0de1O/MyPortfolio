@@ -1,0 +1,202 @@
+<html><head><base href="https://websim.universe/projects/prospection-app">
+<meta charset="utf-8">
+<title>Application de Prospection - Ronaldo DOSSOU</title>
+<style>
+:root {
+    --dark: #2D2E32;
+    --light: #E0E0E0;
+    --accent: #4A90E2;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 15px;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    padding: 40px;
+    border-right: 1px solid var(--light);
+}
+
+.content {
+    flex-grow: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    font-weight: normal;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: var(--light);
+    margin-top: 5px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.menu li {
+    margin-bottom: 5px;
+}
+
+.menu a {
+    color: var(--light);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--accent);
+}
+
+.project-details {
+    max-width: 800px;
+}
+
+.project-image {
+    width: 100%;
+    height: 300px;
+    background-color: #3A3B3F;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: var(--light);
+}
+
+.project-description {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.project-tech {
+    margin-bottom: 20px;
+}
+
+.tech-tag {
+    display: inline-block;
+    background-color: rgba(74, 144, 226, 0.2);
+    color: var(--accent);
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.project-features {
+    margin-bottom: 20px;
+}
+
+.feature-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.feature-list li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.feature-list li::before {
+    content: "•";
+    color: var(--accent);
+    position: absolute;
+    left: 0;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 8px;
+    color: var(--light);
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <h1>Ronaldo DOSSOU</h1>
+        <p class="subtitle">Designer &amp; Developer</p>
+        <ul class="menu">
+            <li><a href="https://websim.universe/projects">Projects</a></li>
+            <li><a href="https://websim.universe/info">Info</a></li>
+            <li><a href="https://websim.universe/contact">Contact</a></li>
+            <li><a href="https://websim.universe/faq">FAQ</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="project-details">
+            <h2>Application de Prospection</h2>
+            <div class="project-image">
+                [Interface de l'application de prospection]
+            </div>
+            <div class="project-description">
+                <p>L'Application de Prospection est un outil puissant développé en VB.NET pour optimiser et simplifier le processus de suivi de prospection commerciale. Cette application desktop intègre une base de données robuste, offrant une solution complète pour gérer efficacement les activités de prospection et les relations clients.</p>
+            </div>
+            <div class="project-tech">
+                <span class="tech-tag">VB.NET</span>
+                <span class="tech-tag">SQL Server</span>
+                <span class="tech-tag">Windows Forms</span>
+            </div>
+            <div class="project-features">
+                <h3>Fonctionnalités principales :</h3>
+                <ul class="feature-list">
+                    <li>Gestion des contacts et des entreprises prospects</li>
+                    <li>Suivi des interactions et des communications avec les prospects</li>
+                    <li>Planification et rappels pour les activités de prospection</li>
+                    <li>Reporting et analyse des performances de prospection</li>
+                    <li>Interface utilisateur intuitive et conviviale</li>
+                    <li>Synchronisation des données en temps réel</li>
+                    <li>Exportation des données vers différents formats (Excel, PDF)</li>
+                    <li>Système de filtrage et de recherche avancé</li>
+                </ul>
+            </div>
+            <div class="project-description">
+                <p>Cette application a été conçue pour répondre aux besoins spécifiques des équipes commerciales, leur permettant de gérer efficacement leur pipeline de prospection, d'optimiser leurs efforts de vente et d'améliorer la conversion des prospects en clients. L'intégration d'une base de données robuste assure la sécurité et l'intégrité des données, tout en offrant des performances élevées même avec un grand volume d'informations.</p>
+            </div>
+            <a href="https://websim.universe/projects" class="back-link">← Retour aux projets</a>
+        </div>
+    </div>
+</div>
+
+<div class="copyright">© 2023 Ronaldo DOSSOU. All rights reserved.</div>
+
+</body></html>

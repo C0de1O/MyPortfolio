@@ -1,0 +1,190 @@
+<html><head><base href="https://websim.universe/projects/genie-platform">
+<meta charset="utf-8">
+<title>Ronaldo DOSSOU - Plateforme Génie</title>
+<style>
+:root {
+    --dark: #2D2E32;
+    --light: #E0E0E0;
+    --accent: #4A90E2;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 15px;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    padding: 40px;
+    border-right: 1px solid var(--light);
+}
+
+.content {
+    flex-grow: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+h1, h2 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    font-weight: normal;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: var(--light);
+    margin-top: 5px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.menu li {
+    margin-bottom: 5px;
+}
+
+.menu a {
+    color: var(--light);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.project-details {
+    max-width: 800px;
+}
+
+.project-title {
+    font-size: 28px;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.project-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.project-tech {
+    font-size: 14px;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.project-features {
+    margin-bottom: 30px;
+}
+
+.project-features h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project-features ul {
+    padding-left: 20px;
+}
+
+.project-features li {
+    margin-bottom: 10px;
+}
+
+.project-challenges {
+    margin-bottom: 30px;
+}
+
+.project-challenges h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project-challenges p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.back-link {
+    display: inline-block;
+    color: var(--light);
+    text-decoration: none;
+    font-size: 14px;
+    border: 1px solid var(--accent);
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 30px;
+}
+
+.back-link:hover {
+    background-color: var(--accent);
+    color: var(--dark);
+}
+
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 8px;
+    color: var(--light);
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <h1>Ronaldo DOSSOU</h1>
+        <p class="subtitle">Designer &amp; Developer</p>
+        <ul class="menu">
+            <li><a href="https://websim.universe/projects">Projects</a></li>
+            <li><a href="https://websim.universe/info">Info</a></li>
+            <li><a href="https://websim.universe/contact">Contact</a></li>
+            <li><a href="https://websim.universe/faq">FAQ</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="project-details">
+            <h2 class="project-title">Plateforme Génie</h2>
+            <p class="project-description">La Plateforme Génie est une application web innovante conçue pour suivre les scores en temps réel d'un jeu biblique, depuis la phase de poules jusqu'à la finale. Ce projet combine des technologies modernes pour offrir une expérience utilisateur fluide et interactive.</p>
+            <p class="project-tech">Technologies utilisées : MVC, PHP, SQL, JS</p>
+            
+            <div class="project-features">
+                <h3>Fonctionnalités principales :</h3>
+                <ul>
+                    <li>Suivi en temps réel des scores pour chaque équipe</li>
+                    <li>Gestion des phases de tournoi (poules, quarts de finale, demi-finales, finale)</li>
+                    <li>Tableau de bord administrateur pour la gestion des équipes et des matchs</li>
+                    <li>Affichage dynamique des classements et des statistiques</li>
+                    <li>Interface responsive adaptée aux différents appareils</li>
+                    <li>Système de notification pour les mises à jour importantes</li>
+                </ul>
+            </div>
+            
+            <div class="project-challenges">
+                <h3>Défis techniques :</h3>
+                <p>L'un des principaux défis de ce projet était de garantir la mise à jour en temps réel des scores sans surcharger le serveur ou compromettre les performances. Pour résoudre ce problème, j'ai implémenté une solution utilisant AJAX et WebSockets pour permettre des mises à jour instantanées et efficaces.</p>
+                <p>Un autre défi était de concevoir une structure de base de données flexible capable de gérer les différentes phases du tournoi, tout en maintenant l'intégrité des données et en permettant une récupération rapide des informations. J'ai utilisé une approche MVC (Modèle-Vue-Contrôleur) pour organiser le code de manière modulaire et maintenable.</p>
+            </div>
+            
+            <a href="https://websim.universe/projects" class="back-link">Retour aux projets</a>
+        </div>
+    </div>
+</div>
+
+<div class="copyright">© 2023 Ronaldo DOSSOU. All rights reserved.</div>
+
+</body></html>
